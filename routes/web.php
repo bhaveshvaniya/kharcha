@@ -15,4 +15,5 @@ Route::prefix('portfolio')->name('portfolio.')->group(function () {
     Route::post('/buy', [PortfolioController::class, 'buy'])->name('buy');
     Route::post('/sell', [PortfolioController::class, 'sell'])->name('sell');
     Route::get('/transactions', [PortfolioController::class, 'transactions'])->name('transactions');
+    Route::get('/task', [PortfolioController::class, 'task'])->name('task');
 });
